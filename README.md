@@ -1,2 +1,2 @@
-# javaprograms
+# javaproject
 Authoe - yashasvi rajput
