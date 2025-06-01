@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yashasvi | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ecf0f1;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: white;
+      height: 80vh;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      animation: slideUp 1.5s ease-out;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #0097a7;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 2rem; }
+      nav a { display: block; margin: 10px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Yashasvi's Space</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm Yashasvi 👋</h2>
+      <p>I build awesome things using Java, HTML, and creative thinking. Explore my digital world!</p>
+      <button class="btn" onclick="alert('Thanks for clicking!')">Get in Touch</button>
+    </div>
+  </div>
+
+  <section>
+    <h2>🚀 What I Do</h2>
+    <p>I’m a curious and creative mind passionate about programming, design, and building intuitive web experiences. Check out my GitHub for cool projects!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Yashasvi Singh Rajput | Built with ❤️ and HTML</p>
+  </footer>
+
+</body>
+</html>
