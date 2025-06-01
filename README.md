@@ -1,2 +1,2 @@
 # javaproject
-Authoe - yashasvi rajput
+Author - yashasvi rajput
